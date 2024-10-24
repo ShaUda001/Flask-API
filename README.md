@@ -7,6 +7,7 @@ This project is a Flask-based application that provides multiple API endpoints t
 Features:
 
 Multiple Endpoints:
+
 /iss/ - Get the current location of the International Space Station.
 
 /chuck-norris/ - Fetch a random Chuck Norris joke.
@@ -23,14 +24,21 @@ Multiple Endpoints:
 
 /joke/ - Fetch a random joke.
 
+
 User Input Support:
+
 The Pokémon endpoint allows users to input a Pokémon name to fetch detailed information.
+
 Use the endpoint '/pokemon/?pokemon=ENTER_POKEMON_NAME' and replace [ENTER_POKEMON_NAME] with the name of the pokemon
 
+
 Flask Framework:
+
 The project is built using Flask, providing a simple yet powerful way to create API routes and handle requests.
 
+
 JSON Responses:
+
 All endpoints return data in structured JSON format, making it easy to integrate with other applications or systems.
 
 How to Run:
