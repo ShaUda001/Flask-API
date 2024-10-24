@@ -7,25 +7,35 @@ This project is a Flask-based application that provides multiple API endpoints t
 Features:
 
 Multiple Endpoints:
-    /iss/ - Get the current location of the International Space Station.
-    /chuck-norris/ - Fetch a random Chuck Norris joke.
-    /dog/ - Retrieve a random dog image.
-    /breweries/ - Get a list of breweries.
-    /pokemon/?pokemon=ENTER_POKEMON_NAME - Fetch data for a specific Pokémon.
-    /random-user/ - Generate a random user profile.
-    /cat-fact/ - Get a random cat fact.
-    /joke/ - Fetch a random joke.
+/iss/ - Get the current location of the International Space Station.
+
+/chuck-norris/ - Fetch a random Chuck Norris joke.
+
+/dog/ - Retrieve a random dog image.
+
+/breweries/ - Get a list of breweries.
+
+/pokemon/?pokemon=ENTER_POKEMON_NAME - Fetch data for a specific Pokémon.
+
+/random-user/ - Generate a random user profile.
+
+/cat-fact/ - Get a random cat fact.
+
+/joke/ - Fetch a random joke.
+
 User Input Support:
-    The Pokémon endpoint allows users to input a Pokémon name to fetch detailed information.
-    Use the endpoint '/pokemon/?pokemon=ENTER_POKEMON_NAME' and replace [ENTER_POKEMON_NAME] with the name of the pokemon
+The Pokémon endpoint allows users to input a Pokémon name to fetch detailed information.
+Use the endpoint '/pokemon/?pokemon=ENTER_POKEMON_NAME' and replace [ENTER_POKEMON_NAME] with the name of the pokemon
+
 Flask Framework:
-    The project is built using Flask, providing a simple yet powerful way to create API routes and handle requests.
+The project is built using Flask, providing a simple yet powerful way to create API routes and handle requests.
+
 JSON Responses:
-    All endpoints return data in structured JSON format, making it easy to integrate with other applications or systems.
+All endpoints return data in structured JSON format, making it easy to integrate with other applications or systems.
 
 How to Run:
 
-Clone this repository.
-Install the required dependencies (Flask, requests).
-Run the Flask server locally using python main.py.
-Access the API via http://127.0.0.1:5000/ in your browser or via API testing tools like Postman.
+1. Clone this repository.
+2. Install the required dependencies (Flask, requests).
+3. Run the Flask server locally using python main.py.
+4. Access the API via http://127.0.0.1:5000/ in your browser or via API testing tools like Postman.
