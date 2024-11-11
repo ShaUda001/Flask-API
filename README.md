@@ -45,5 +45,5 @@ How to Run:
 
 1. Clone this repository.
 2. Install the required dependencies (Flask, requests).
-3. Run the Flask server locally using python main.py.
+3. Run the Flask server locally using terminal (Windows) 'python main.py'.
 4. Access the API via http://127.0.0.1:5000/ in your browser or via API testing tools like Postman.
