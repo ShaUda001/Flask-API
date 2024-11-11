@@ -1,4 +1,4 @@
-from flask import Flask, request
+from flask import Flask, request, jsonify
 import time, json, requests
 
 app = Flask(__name__)
@@ -10,8 +10,7 @@ def home():
         'urls':['/iss/', '/chuck-norris/', '/dog/', '/breweries/', '/pokemon/?pokemon=ENTER_POKEMON_NAME/', '/random-user/', '/cat-fact/', '/joke/'],
         'time stamp:': time.time()
     }
-    jdump = json.dumps(data, indent=4)
-    return f'<pre>{jdump}</pre>'
+    return jsonify(data)
 
 @app.route('/iss/')
 def get_iss_location():
@@ -20,8 +19,7 @@ def get_iss_location():
     
     if data.status_code == 200:
         data = data.json()
-        data = json.dumps(data, indent=4)
-        return f'<pre>{data}</pre>'
+        return jsonify(data)
     else:
         return 'Error: Failed to get request'
     
@@ -33,8 +31,7 @@ def get_chuck_norris_joke():
     
     if data.status_code == 200:
         data = data.json()
-        data = json.dumps(data, indent=4)
-        return f"<pre>{data}</pre>"
+        return jsonify(data)
     else:
         return 'Error: Failed to get request'
 
@@ -46,8 +43,7 @@ def get_dog_image():
     
     if data.status_code == 200:
         data = data.json()
-        jdump = json.dumps(data, indent=4)
-        return f'<pre>{jdump}</pre>'
+        return jsonify(data)
     else:
         return 'Error: Failed to get request'
 
@@ -59,8 +55,7 @@ def get_breweries():
     
     if data.status_code == 200:
         data = data.json()
-        jdump = json.dumps(data, indent=4)
-        return f'<pre>{jdump}</pre>'
+        return jsonify(data)
     else:
         return 'Error: Failed to get request'
 
@@ -73,8 +68,7 @@ def get_pokemon():
     
     if data.status_code == 200:
         data = data.json()
-        jdump = json.dumps(data, indent=4)
-        return f'<pre>{jdump}</pre>'
+        return jsonify(data)
     else:
         return 'Error: Failed to get request'
 
@@ -87,8 +81,7 @@ def get_random_user():
     
     if data.status_code == 200:
         data = data.json()
-        jdump = json.dumps(data, indent=4)
-        return f'<pre>{jdump}</pre>'
+        return jsonify(data)
     else:
         return 'Error: Failed to get request'
 
@@ -101,8 +94,7 @@ def get_cat_fact():
     
     if data.status_code == 200:
         data = data.json()
-        jdump = json.dumps(data, indent=4)
-        return f'<pre>{jdump}</pre>'
+        return jsonify(data)
     else:
         return 'Error: Failed to get request'
 
@@ -114,8 +106,7 @@ def get_joke():
     
     if data.status_code == 200:
         data = data.json()
-        jdump = json.dumps(data, indent=4)
-        return f'<pre>{jdump}</pre>'
+        return jsonify(data)
     else:
         return 'Error: Failed to get request'
 
